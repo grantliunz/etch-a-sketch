@@ -1,10 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-left: 200px;
+}
+
 #optionsContainer {
-    position: fixed;
     height: 900px;
     width: 200px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     align-items: top;
     background-color: #000;
     padding: 50px 5px;
@@ -13,9 +17,9 @@
 #container {
     height: 1000px;
     width: 1000px;
-    margin: auto;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     background-color: #777;
+
 }
