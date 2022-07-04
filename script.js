@@ -18,14 +18,12 @@ const colors = [
     "yellow",
     "orange",
     "purple",
-
-
 ];
 
 
 let gridContainer = document.createElement('div');
 gridContainer.classList.add('gridContainer');
-gridContainer.style.cssText = 'background-color: white; margin:auto; margin-top:20px; margin-bottom:20px; width:960px; height:960px; display: grid; ';
+gridContainer.style.cssText = 'background-color: white; margin:auto; margin-top:20px; margin-bottom:20px; width:860px; height:860px; display: grid; ';
 container.appendChild(gridContainer);
 
 

@@ -2,13 +2,14 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    background-color: black;
 }
 
 
 
 #container {
-    height: 1000px;
-    width: 1000px;
+    height: 900px;
+    width: 900px;
     justify-content: center;
     align-items: center;
     background-color: #777;
@@ -17,7 +18,7 @@ body {
 }
 
 #optionsContainer {
-    height: 900px;
+    height: 800px;
     width: 200px;
     display: flex;
     flex-direction: column;
@@ -27,4 +28,11 @@ body {
     position: absolute;
     top: 0px;
     right: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
