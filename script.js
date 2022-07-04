@@ -10,11 +10,10 @@ gridContainer.style.gridTemplateColumns = 'auto '.repeat(gridSize);
 container.appendChild(gridContainer);
 
 
-
-
 for (let i = 0; i < gridSize * gridSize; i++) {
     const gridItem = document.createElement('div');
     gridItem.classList.add('gridItem');
-    gridItem.style.cssText = 'border: 1px solid rgba(0, 0, 0, 0.5);'
+    gridItem.style.cssText = 'border: 1px solid rgba(0, 0, 0, 0.5); border-style: solid solid none none; background:white;'
+    gridItem.addEventListener('click', () => { gridItem.style.background = 'black'; });
     gridContainer.appendChild(gridItem);
 }
