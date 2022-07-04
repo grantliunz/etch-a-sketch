@@ -7,3 +7,13 @@
     align-items: center;
     background-color: #777;
 }
+
+#optionsContainer {
+    height: 200px;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
