@@ -6,7 +6,9 @@ document.body.onmouseup = () => (mouseDown = false)
 
 const container = document.querySelector('#container');
 
-let gridSize = 32;
+let initalGridSize = 32;
+let penColor = "red";
+
 
 let gridContainer = document.createElement('div');
 gridContainer.classList.add('gridContainer');
@@ -36,14 +38,14 @@ function updateGrid(gridSize) {
 
 }
 
-updateGrid(16);
+updateGrid(initalGridSize);
 
 
 
 function clickGrid(e) {
     if (e.type === 'mouseover' && !mouseDown) return
     if (e.target.style.backgroundColor == '#777') return
-    e.target.style.backgroundColor = '#777';
+    e.target.style.backgroundColor = `${penColor}`;
     console.log('tset1');
 }
 
@@ -85,4 +87,26 @@ sizeButton.addEventListener('click', () => {
 });
 
 optionsContainer.appendChild(sizeButton);
+
+const colorContainer = document.createElement('div');
+colorContainer.style.cssText = "display:flex; margin-top:10px";
+
+const redSelector = document.createElement('button');
+redSelector.style.cssText = "background:red; width:50px; height:50px;"
+colorContainer.appendChild(redSelector);
+redSelector.addEventListener('click', () => { penColor = "red" })
+
+const greenSelector = document.createElement('button');
+greenSelector.style.cssText = "background:green; width:50px; height:50px;"
+colorContainer.appendChild(greenSelector);
+greenSelector.addEventListener('click', () => { penColor = "green" })
+
+
+const blueSelector = document.createElement('button');
+blueSelector.style.cssText = "background:blue; width:50px; height:50px;"
+colorContainer.appendChild(blueSelector);
+blueSelector.addEventListener('click', () => { penColor = "blue" })
+
+
+optionsContainer.appendChild(colorContainer);
 
