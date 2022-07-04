@@ -2,7 +2,18 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    padding-left: 200px;
+}
+
+
+
+#container {
+    height: 1000px;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    background-color: #777;
+    margin: 10px auto;
+    position: relative;
 }
 
 #optionsContainer {
@@ -13,14 +24,7 @@ body {
     align-items: top;
     background-color: #bbb;
     padding: 50px 5px;
-}
-
-#container {
-    height: 1000px;
-    width: 1000px;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    background-color: #777;
-
+    position: absolute;
+    top: 0px;
+    right: 100%;
 }
