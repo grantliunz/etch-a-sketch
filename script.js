@@ -89,7 +89,7 @@ sizeButton.addEventListener('click', () => {
 optionsContainer.appendChild(sizeButton);
 
 const colorContainer = document.createElement('div');
-colorContainer.style.cssText = "display:flex; margin-top:10px";
+colorContainer.style.cssText = "display:flex; margin-top:10px; margin-left:10px; display: grid; grid-template-columns:auto auto auto; gap:10px";
 
 const redSelector = document.createElement('button');
 redSelector.style.cssText = "background:red; width:50px; height:50px;"
@@ -106,6 +106,16 @@ const blueSelector = document.createElement('button');
 blueSelector.style.cssText = "background:blue; width:50px; height:50px;"
 colorContainer.appendChild(blueSelector);
 blueSelector.addEventListener('click', () => { penColor = "blue" })
+
+const blackSelector = document.createElement('button');
+blackSelector.style.cssText = "background:black; width:50px; height:50px;"
+colorContainer.appendChild(blackSelector);
+blackSelector.addEventListener('click', () => { penColor = "black" })
+
+const whiteSelector = document.createElement('button');
+whiteSelector.style.cssText = "background:white; width:50px; height:50px;"
+colorContainer.appendChild(whiteSelector);
+whiteSelector.addEventListener('click', () => { penColor = "white" })
 
 
 optionsContainer.appendChild(colorContainer);

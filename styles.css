@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: top;
-    background-color: #000;
+    background-color: #bbb;
     padding: 50px 5px;
 }
 
